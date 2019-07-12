@@ -1,0 +1,203 @@
+ /************* main page ************/
+ 
+ * {
+     box-sizing: border-box;
+ }
+ 
+ body {
+     background-color: black;
+     min-width: 320px;
+     max-width: 1600px;
+ }
+ 
+ .container {
+     position: relative;
+     text-align: center;
+ }
+ 
+ .center {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+ }
+ /************* Start Quiz ************/
+ 
+ h1 {
+     color: #ebab47;
+     font-size: 55px;
+     text-align: center;
+     height: 125px;
+ }
+ 
+ header {
+     color: #ebab47;
+     font-size: 55px;
+     text-align: center;
+     height: 125px;
+ }
+ 
+ #start {
+     display: block;
+     border-radius: 10%;
+     font-size: 50px;
+     border: 10px solid dimgray;
+     background-color: black;
+     color: #ebab47;
+     font-size: 25;
+     float: center;
+     margin: 0 auto;
+ }
+ 
+ #start:hover {
+     background: purple;
+     color: #ebab47;
+     ;
+     box-shadow: inset 0 0 0 3px white;
+ }
+ /************* Quiz Questions ************/
+ 
+ .answer-one {
+     background-color: purple;
+     height: 150px;
+     width: 250px;
+     padding: 10px;
+     font-size: 28px;
+     border: 5px solid white;
+     margin-top: 0px;
+     border-radius: 12px;
+     color: #ebab47;
+     margin: 10px;
+ }
+ 
+ .answer-one:hover {
+     background: white;
+     color: black;
+     box-shadow: inset 0 0 0 3px white;
+ }
+ 
+ .choices {
+     text-align: center;
+     font-size: 48px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     /* padding: 0px;
+      margin: 0px; */
+ }
+ 
+ .results {
+     text-align: center;
+ }
+ 
+ #submitUserGuess {
+     width: 40%;
+     font-size: 50px;
+     margin-left: 30%;
+     margin-right: 30%;
+     margin-top: 30px;
+     cursor: pointer;
+     border-radius: 15px;
+ }
+ 
+ #submitUserGuess:hover {
+     background-color: purple;
+     color: #ebab47;
+     ;
+ }
+ 
+ #submitUserGuess:active {
+     background-color: purple;
+     box-shadow: 0 5px #666;
+     transform: translateY(4px);
+ }
+ 
+ .questionNumber {
+     color: #ebab47;
+     ;
+     text-align: center;
+ }
+ 
+ .feedback {
+     color: #ebab47;
+     ;
+     text-align: center;
+     font-size: 24px;
+ }
+ 
+ .answeredCorrectly {
+     color: #ebab47;
+     ;
+     text-align: center;
+ }
+ 
+ #nextQuestion {
+     width: 30%;
+     margin-left: 35%;
+     margin-right: 35%;
+     font-size: 40px;
+     margin-top: 70px;
+     cursor: pointer;
+     border-radius: 15px;
+     box-shadow: 0 9px #999;
+ }
+ 
+ #nextQuestion:hover {
+     background-color: lightgrey
+ }
+ 
+ #nextQuestion:active {
+     background-color: lightgrey;
+     box-shadow: 0 5px #666;
+     transform: translateY(4px);
+ }
+ /************* Results Page ************/
+ 
+ #quiz-results {
+     color: #ebab47;
+     ;
+     text-align: center;
+     font-size: 22px;
+ }
+ 
+ #startOver {
+     width: 40%;
+     margin-left: 30%;
+     margin-right: 30%;
+     font-size: 40px;
+     margin-top: 500px;
+     cursor: pointer;
+     border-radius: 15px;
+     box-shadow: 0 9px #999;
+ }
+ /************* responsive ************/
+ 
+ @media only screen and (max-width: 900px) {
+    
+     }
+     h1 {
+         font-size: 30px;
+     }
+ }
+ 
+ .submitUserGuess {
+     width: 10%;
+     font-size: 10px;
+     margin-left: 30%;
+     margin-right: 30%;
+     margin-top: 30px;
+     cursor: pointer;
+     border-radius: 15pxs
+ }
+ 
+ header {
+     font-size: 40px;
+     margin-bottom: 50px;
+ }
+ 
+ @media screen and (max-width: 2500px) {
+     .choices {
+         max-width: 580px;
+         margin: auto;
+     }
+ }
